@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pavle.jmbgprovera.MainActivity">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/textView_datum"
+        android:layout_alignStart="@+id/textView_datum"
+        android:id="@+id/textView_pol"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/textView_pol"
+        android:layout_alignEnd="@+id/textView_pol"
+        android:id="@+id/textView_redni_broj"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_datum"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_region"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/button_okrug"
+        android:layout_alignBottom="@+id/button_okrug"
+        android:layout_alignLeft="@+id/imageView_drzava"
+        android:layout_alignStart="@+id/imageView_drzava"/>
+
+    <TextView
+        android:text="Pol :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView4"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/editText_jmbg"
+        android:layout_toStartOf="@+id/editText_jmbg"/>
+
+    <TextView
+        android:text="Redni broj rodjenja :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:id="@+id/textView5"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"/>
+
+    <TextView
+        android:text="Datum rodjenja :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView3"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/line"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_marginTop="32dp"
+        android:id="@+id/line"
+        android:layout_below="@+id/button_okrug"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editText_jmbg"
+        android:hint="Unesi JMBG"
+        android:background="@drawable/rounded_border"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"/>
+
+    <Button
+        android:text="Okrug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_okrug"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/imageView_drzava"
+        android:layout_toLeftOf="@+id/textView_datum"
+        android:layout_toStartOf="@+id/textView_datum"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/flag_rs"
+        android:layout_marginTop="28dp"
+        android:id="@+id/imageView_drzava"
+        android:layout_below="@+id/editText_jmbg"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_republika"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_okrug"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_reset"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
